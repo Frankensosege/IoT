@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Actor 정보</title>
+</head>
+<body>
+    <h1> My actor records </h1>
+    <ul>
+        {% for row in rows %}
+            <li>{{row.0}} : {{row.1}} - {{row.2}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
